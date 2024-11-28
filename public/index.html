@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/post" method="post">
+        <h2>Registration Form</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="program">Program</label>
+        <div class="custom-select">
+            <select>
+                <option value="" disabled selected>Select your program</option>
+                <option value="BSIT">Bachelor of Science in Information Technology</option>
+                <option value="BSCPE">Bachelor of Science in Computer Engineering</option>
+            </select>
+        </div>
+        
+        <label for="year_section">Year & Section</label>
+        <input type="text" id="year_section" name="year_section" placeholder="e.g., 2-A" required>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
